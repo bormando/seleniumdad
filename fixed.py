@@ -4,9 +4,9 @@ import time
 
 
 browser = webdriver.Chrome(ChromeDriverManager().install())
-browser.get("https://www.seleniumeasy.com/test/drag-and-drop-demo.html")
-source = browser.find_element_by_css_selector("span[draggable]:nth-child(2)")
-target = browser.find_element_by_css_selector("#mydropzone")
+browser.get("http://the-internet.herokuapp.com/drag_and_drop")
+source = browser.find_element_by_css_selector("#column-a")
+target = browser.find_element_by_css_selector("#column-b")
 f = open("script.js",  "r")
 javascript = f.read()
 f.close()
